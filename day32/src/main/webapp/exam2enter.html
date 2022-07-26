@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+input[name="test"] {
+	border: 3px solid black;
+}
+</style>
+</head>
+<body>
+
+	<input type="text" onkeypress="enter(event)" name="text" id="txt">
+
+	<script type="text/javascript">
+		function enter(e) {
+			if(e.keyCode==13){
+			alert(e.target.value);				
+			}
+		}
+	</script>
+</body>
+</html>

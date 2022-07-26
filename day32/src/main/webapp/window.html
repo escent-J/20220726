@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>window객체</title>
+<style>
+button:hover{
+cursor : pointer;
+}
+</style>
+</head>
+<body>
+<button>새 창 열기</button>
+<button>새 창 닫기</button>
+
+<script type="text/javascript">
+	var btn=document.querySelectorAll('button');
+	var win;
+	btn[0].addEventListener('click',function(){
+		win=window.open('https://www.naver.com','_blank');
+	});
+	btn[1].addEventListener('click',function(){
+		win.close();
+	});
+</script></body>
+</html>

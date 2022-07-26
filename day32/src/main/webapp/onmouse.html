@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>마우스 이벤트</title>
+<style>
+#box {
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	background-color: coral;
+	transition: 1s ease;
+}
+</style>
+</head>
+<body>
+	<!-- onmouseover : 마우스가 올라갔을 때 / onmouseout : 마우스가 떨어졌을 때 -->
+	<div id="box" onmouseover="func1(this)" onmouseout="func2(this)"></div>
+
+	<script type="text/javascript">
+		function func1(obj){
+			obj.style.backgroundColor="green";
+		}
+		function func2(obj){
+			obj.style.backgroundColor="lightgray";
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<button onclick="func()">클릭</button>
+	</div>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+	</ul>
+
+	<script type="text/javascript">
+		function func() {
+			var colorList = [ 'red', 'orange', 'yellow', 'lightgreen',
+					'lightblue', 'blue', 'purple' ];
+			var color = document.querySelectorAll('li');
+			for (var i = 0; i < color.length; i++) {
+				color[i].style.backgroundColor = colorList[i];
+			}
+		}
+	</script>
+</body>
+</html>

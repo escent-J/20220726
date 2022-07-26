@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<button type="button" onclick="func()">색깔바꾸기</button>
+	<ul>
+		<li>1</li>
+		<li class="test2">2</li>
+		<li id="test">3</li>
+		<li class="test2">4</li>
+	</ul>
+
+	<script type="text/javascript">
+		function func() {
+			document.getElementById("test").style.backgroundColor = "red";
+
+			var test = document.getElementsByClassName("test2");
+			for (var i = 0; i < test.length; i++) {
+				test[i].style.backgroundColor = "green";
+			}
+
+		}
+	</script>
+</body>
+</html>

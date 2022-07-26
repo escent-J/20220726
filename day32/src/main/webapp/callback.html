@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>콜백 함수 형식</title>
+<style>
+.box{
+width : 100px;
+height : 100px;
+background-color : pink;
+cursor : pointer;
+}
+</style>
+</head>
+<body>
+<div class="box"></div>
+
+<script>
+	document.querySelector('.box').onclick=function(){
+		this.style.backgroundColor="lightgreen";
+	}
+</script>
+</body>
+</html>

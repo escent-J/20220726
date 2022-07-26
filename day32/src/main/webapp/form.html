@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form name="regForm" action = "NewFile1.html" method="post">
+	아이디 : <input type="text" name="userId" placeholder="5글자 이상">
+	<br> 
+	비밀번호 : <input type="password" name="userPw" placeholder="7글자 이상"> 
+	<hr>
+	<input type="submit" value="회원가입">
+</form>
+
+<script type="text/javascript">
+	var form = document.forms['regForm'];
+	form.onsubmit=function(){
+		if(this.userId.value.length<5){
+			alert('아이디는 5글자 이상이어야 합니다');
+			this.userId.focus();
+			return false;
+		}
+		if(this.userPw.value.length<7){
+			alert('비밀번호는 7글자 이상이어야 합니다');
+			this.userPw.focus();
+			return false;
+		}
+	}
+</script></body>
+</html>

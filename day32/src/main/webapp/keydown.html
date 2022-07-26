@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+input[name="test"]{ /*특정 문자로 효과넣기*/
+	border : 3px solid black;
+}
+</style>
+</head>
+<body>
+<!-- onkeydown 키를 눌렀을 때 -->
+<input type="text" onkeydown="func(event)" name="test" placeholder="console 확인"/>
+
+<script type="text/javascript">
+	function func(event){
+		console.log(event.keyCode);
+	}
+</script>
+</body>
+</html>
